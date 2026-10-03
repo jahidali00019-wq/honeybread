@@ -13,10 +13,10 @@ jobs:
         with:
           gradle-version: 8.8
       - run: |
-          unzip honeybread-fabric-1.21.1-source.zip
+          unzip Enjou-1.21.1-source.zip
           cd honeybread
           gradle build
       - uses: actions/upload-artifact@v4
         with:
-          name: honeybread-mod
-          path: honeybread/build/libs/*.jar
+          name: enjou-mod
+          path: enjou/build/libs/*.jar
